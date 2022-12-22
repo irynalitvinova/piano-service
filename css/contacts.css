@@ -1,0 +1,144 @@
+.contacts {
+  /* background-color: var(--brand-color); */
+}
+
+.contacts-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.contacts-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+}
+
+
+.contacts-info-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-info-item {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  column-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.contacts-info-item-content-text {
+  padding-bottom: 5px;
+}
+
+.contacts-info-item-content-phone, .contacts-info-item-content-email {
+  display: block;
+  font-weight: 700;
+  transition: all 0.3s;
+  padding-bottom: 5px;
+}
+
+.contacts-info-item-content-phone:hover, .contacts-info-item-content-email:hover {
+  text-decoration: underline;
+}
+
+.contacts-map {
+  filter: grayscale(100%);
+}
+
+.contacts-map-iframe {
+  width: 100%;
+  min-height: 280px;
+  height: 100%;
+}
+
+.contacts-form-inner {
+  background-color: var(--alternate-text-color);
+  padding: 50px;
+}
+
+.contacts-form-title {
+  font-size: 28px;
+  font-weight: 400;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.contacts-form-text {
+  padding-bottom: 20px;
+}
+
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contacts-form-input {
+  padding: 12px 20px 13px;
+  background-color: var(--background-color-section-item);
+  border: none;
+ 
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--main-text-color);
+}
+
+.contacts-form-input::placeholder {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--main-text-color);
+
+}
+
+.contacts-form-input--message {
+  padding-bottom: 100px;
+
+}
+
+.contacts-form-input--message::placeholder {
+  position: top;
+ 
+}
+
+.contacts-form-button {
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--alternate-text-color);
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 991px) {
+  .contacts-form-inner {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .contacts-info-item {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 440px) {
+  .contacts-form-title {
+    font-size: 20px;
+  }
+}
