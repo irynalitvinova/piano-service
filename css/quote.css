@@ -1,14 +1,14 @@
 .quote {
-  background-image: url(../img/piano-bottom-bg.jpg);
+  background-image: url(../img/notes-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover ;
-  background-position: bottom 50%;
+  background-position: center;
 }
 
-.quote-description {
-   text-align: center;
+.quote-text {
+  text-align: center;
   font-size: 22px;
   font-weight: 500;
   color: var(--background-color-dark);
-
+  padding-bottom: 10px;
 }
