@@ -180,4 +180,7 @@ body {
   .subtitle {
     padding-bottom: 10px;
   }
+  .description {
+    padding-bottom: 15px;
+  }
 }
