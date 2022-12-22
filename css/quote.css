@@ -1,7 +1,7 @@
 .quote {
   background-image: url(../img/notes-bg.jpg);
   background-repeat: no-repeat;
-  background-size: cover ;
+  background-size: cover;
   background-position: center;
 }
 
@@ -11,4 +11,11 @@
   font-weight: 500;
   color: var(--background-color-dark);
   padding-bottom: 10px;
+}
+
+@media (max-width: 479.98px) {
+  .quote-text {
+    text-align: left;
+    font-size: 18px;
+  }
 }
