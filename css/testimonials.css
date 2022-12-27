@@ -6,16 +6,16 @@
 }
 
 .testimonials-item {
-  padding: 50px 25px;
+  padding: 30px 20px;
   background-color: var(--alternate-text-color);
   color: var(--background-color-dark);
   position: relative;
 }
 
 .testimonials-item::before {
-  content: "\01D160\01D160";
-  font-size: 50px;
-  top: -10px;
+  content: "\01D160";
+  font-size: 30px;
+  top: -5px;
   right: 4%;
   position: absolute;
 }
