@@ -5,5 +5,8 @@
     if (targetItem.closest('.icon-menu')) {
       document.documentElement.classList.toggle('menu-open');
     }
+    if (targetItem.closest('.menu-link')) {
+      document.documentElement.classList.toggle('menu-open');
+    }
   }
 })();
