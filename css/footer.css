@@ -5,12 +5,15 @@
 
 .footer-top {
   padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer-text {
-  max-width: 650px;
-  padding-top: 20px;
-  padding-bottom: 30px;
+.footer-phone {
+ 
 }
 .footer-divider-line {
   height: 1px;
@@ -22,4 +25,6 @@
   display: flex;
   gap: 30px;
   justify-content: center;
+  padding-top: 30px;
+
 }

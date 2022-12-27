@@ -43,7 +43,6 @@
 
 .header-phone {
   flex: 0 0 auto;
-  color: var(--brand-color);
 }
 
 .header-logo,
@@ -161,4 +160,3 @@
     flex: 0 0 40;
   }
 }
-

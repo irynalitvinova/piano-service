@@ -141,6 +141,10 @@ body {
   fill: var(--background-color-dark);
 }
 
+.phone {
+  color: var(--brand-color);
+}
+
 .button-order {
   padding: 9px 30px 10px;
   color: var(--alternate-text-color);
@@ -180,6 +184,7 @@ body {
   .subtitle {
     padding-bottom: 10px;
   }
+
   .description {
     padding-bottom: 15px;
   }
