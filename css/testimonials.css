@@ -23,7 +23,6 @@
   position: absolute;
 }
 
-
 .testimonials-item-name {
   font-weight: 500;
 }
@@ -37,13 +36,13 @@
   font-size: 14px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
   .testimonials-item-text {
     height: 200px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .testimonials-items {
     grid-template-columns: 1fr;
   }
@@ -52,3 +51,4 @@
     height: auto;
   }
 }
+

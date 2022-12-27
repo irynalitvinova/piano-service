@@ -1,15 +1,16 @@
 .quote {
-  background-image: url(../img/notes-bg.jpg);
+  background-image: url(../img/notes-bg2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
+ 
 }
 
 .quote-text {
   text-align: center;
   font-size: 22px;
   font-weight: 500;
-  color: var(--background-color-dark);
+  color: var( --text-color-accent-dark);
   padding-bottom: 10px;
 }
 
