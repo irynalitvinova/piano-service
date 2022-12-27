@@ -12,9 +12,6 @@
   align-items: center;
 }
 
-.footer-phone {
- 
-}
 .footer-divider-line {
   height: 1px;
   width: 100%;
@@ -27,4 +24,10 @@
   justify-content: center;
   padding-top: 30px;
 
+}
+@media (max-width: 479.98px) {
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
