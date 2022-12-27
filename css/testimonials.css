@@ -6,17 +6,19 @@
 }
 
 .testimonials-item {
-  padding: 30px 20px;
-  background-color: var(--alternate-text-color);
-  color: var(--background-color-dark);
   position: relative;
+  padding: 30px 25px;
+  color: var(--background-color-dark);
+  background-color: var(--alternate-text-color);
+  background-image: linear-gradient(0deg, #f0f0f0 1.11%, #ffffff 1.11%, #ffffff 6.67%, #f0f0f0 6.67%, #f0f0f0 7.78%, #fff 7.78%, #fff 13.33%, #f0f0f0 13.33%, #f0f0f0 14.44%, #fff 14.44%, #fff 20%, #f0f0f0 20%, #f0f0f0 21.11%, #fff 21.11%, #fff 43.33%, #f0f0f0 43.33%, #f0f0f0 44.44%, #fff 44.44%, #fff 50%, #f0f0f0 50%, #f0f0f0 51.11%, #ffffff 51.11%, #ffffff 56.67%, #f0f0f0 56.67%, #f0f0f0 57.78%, #fff 57.78%, #fff 63.33%, #f0f0f0 63.33%, #f0f0f0 64.44%, #fff 64.44%, #fff 70%, #f0f0f0 70%, #f0f0f0 71.11%, #fff 71.11%, #fff 93.33%, #f0f0f0 93.33%, #f0f0f0 94.44%, #fff 94.44%, #fff 100%);
+  background-size: 90.00px 90.00px;
 }
 
 .testimonials-item::before {
   content: "\266B";
   font-size: 30px;
   font-family: serif;
-  top: -5px;
+  top: 2px;
   right: 4%;
   position: absolute;
 }
