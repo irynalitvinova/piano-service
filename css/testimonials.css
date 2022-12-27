@@ -13,7 +13,7 @@
 }
 
 .testimonials-item::before {
-  content: "\01D160";
+  content: "\266B";
   font-size: 30px;
   font-family: serif;
   top: -5px;
