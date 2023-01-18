@@ -55,7 +55,7 @@
   display: none;
   overflow: hidden;
   padding-bottom: 20px;
-  padding-right: 40px;
+  padding-right: 20px;
 }
 
 .faq-accordion-panel-text {
@@ -65,5 +65,9 @@
 @media (max-width: 479.98px) {
   .faq-accordion {
     font-size: 16px;
+  }
+
+  .faq-accordion:after {
+    top: 16px;
   }
 }
