@@ -5,7 +5,7 @@
 .faq-accordion {
   padding: 20px 0 20px;
   width: 100%;
-  border-top: 1px solid #C8C8C8;
+  border-top: 1px solid var(--main-text-color);
   border-left: none;
   border-right: none;
   border-bottom: none;
@@ -63,6 +63,9 @@
 }
 
 @media (max-width: 479.98px) {
+  .faq-title {
+    font-size: 21px;
+  }
   .faq-accordion {
     font-size: 16px;
   }

@@ -91,10 +91,7 @@
 
 .contacts-form-input--message {
   padding-bottom: 100px;
-}
-
-.contacts-form-input--message::placeholder {
-  position: top;
+  overflow: hidden;
 }
 
 .contacts-form-button {

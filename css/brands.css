@@ -49,6 +49,8 @@
 
   .brands-gallery-button {
     color: var(--brand-color-dark);
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .brands-gallery-button-prev {

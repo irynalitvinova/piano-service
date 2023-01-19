@@ -11,12 +11,11 @@
   font-family: 'Poppins', sans-serif;
   --main-text-color: #C8C8C8;
   --alternate-text-color: #fff;
-  --text-color-accent-dark: #373737;
+  --text-color-accent-dark: #282828;
   --text-color-accent-light: #B8B6C0;
   --brand-color: #FBBA8B;
-  --brand-color-dark: #4F4789;
+  --brand-color-dark: #4C4386;
   --brand-color-light: #FCD1B1;
-  --background-color-light: #f9f9f9;
   --background-color-dark: #33383e;
   --background-color-section-item: rgba(241, 241, 244, 0.54);
 }
