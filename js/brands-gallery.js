@@ -1,49 +1,64 @@
 (function () {
-  const carouselParnersItems = [
+  const carouselBrandsItems = [
     '<div class="brands-gallery-item"><img class="brands-gallery-item-img" src="img/brands/yamaha.png" alt="Yamaha icon"></div>',
     '<div class="brands-gallery-item"><img class="brands-gallery-item-img" src="img/brands/shaw.png" alt="Shaw icon"></div>',
     '<div class="brands-gallery-item"><img class="brands-gallery-item-img" src="img/brands/casio.png" alt="Casio icon"></div>',
     '<div class="brands-gallery-item"><img class="brands-gallery-item-img" src="img/brands/knight.png" alt="Knight icon"></div>',
     '<div class="brands-gallery-item"><img class="brands-gallery-item-img" src="img/brands/musicman.png" alt="Musicman icon"></div>',
   ];
-  let currentPartnersIndex = 0;
-  function renderPartnersCard() {
-    const partnersItemsContainer = document.querySelector(
-      ".brands-gallery-box"
-    );
-    partnersItemsContainer.innerHTML = carouselParnersItems[currentPartnersIndex];
+  let currentBrandsIndex = 0;
+  function renderBrandsCard() {
+    const brandsItemsContainer = document.querySelector(".brands-gallery-box");
+    brandsItemsContainer.innerHTML = carouselBrandsItems[currentBrandsIndex];
     if (window.innerWidth > 767) {
-      const secondPartnersItemIndex =
-        currentPartnersIndex + 1 >= carouselParnersItems.length ? 0 : currentPartnersIndex + 1;
-      partnersItemsContainer.innerHTML += carouselParnersItems[secondPartnersItemIndex];
+      const secondBrandsItemIndex =
+        currentBrandsIndex + 1 >= carouselBrandsItems.length
+          ? 0
+          : currentBrandsIndex + 1;
+      brandsItemsContainer.innerHTML +=
+        carouselBrandsItems[secondBrandsItemIndex];
 
       if (window.innerWidth > 990) {
-        const thirdPartnersItemIndex =
-          secondPartnersItemIndex + 1 >= carouselParnersItems.length ? 0 : secondPartnersItemIndex + 1;
-        partnersItemsContainer.innerHTML += carouselParnersItems[thirdPartnersItemIndex];
+        const thirdBrandsItemIndex =
+          secondBrandsItemIndex + 1 >= carouselBrandsItems.length
+            ? 0
+            : secondBrandsItemIndex + 1;
+        brandsItemsContainer.innerHTML +=
+          carouselBrandsItems[thirdBrandsItemIndex];
         if (window.innerWidth > 990) {
-          const forthPartnersItemIndex =
-            thirdPartnersItemIndex + 1 >= carouselParnersItems.length ? 0 : thirdPartnersItemIndex + 1;
-          partnersItemsContainer.innerHTML += carouselParnersItems[forthPartnersItemIndex];
+          const forthBrandsItemIndex =
+            thirdBrandsItemIndex + 1 >= carouselBrandsItems.length
+              ? 0
+              : thirdBrandsItemIndex + 1;
+          brandsItemsContainer.innerHTML +=
+            carouselBrandsItems[forthBrandsItemIndex];
         }
       }
     }
   }
-  function showNextPartnersCard() {
-    currentPartnersIndex =
-      currentPartnersIndex + 1 >= carouselParnersItems.length ? 0 : currentPartnersIndex + 1;
-    renderPartnersCard();
+  function showNextBrandsCard() {
+    currentBrandsIndex =
+      currentBrandsIndex + 1 >= carouselBrandsItems.length
+        ? 0
+        : currentBrandsIndex + 1;
+    renderBrandsCard();
   }
-  function showPrevPartnersCard() {
-    currentPartnersIndex =
-      currentPartnersIndex - 1 < 0 ? carouselParnersItems.length - 1 : currentPartnersIndex - 1;
-    renderPartnersCard();
+  function showPrevBrandsCard() {
+    currentBrandsIndex =
+      currentBrandsIndex - 1 < 0
+        ? carouselBrandsItems.length - 1
+        : currentBrandsIndex - 1;
+    renderBrandsCard();
   }
-  renderPartnersCard();
-  const nextPartnersButton = document.querySelector(".brands-gallery-button-next");
-  nextPartnersButton.addEventListener("click", showNextPartnersCard);
-  const prevPartnersButton = document.querySelector(".brands-gallery-button-prev");
-  prevPartnersButton.addEventListener("click", showPrevPartnersCard);
+  renderBrandsCard();
+  const nextBrandsButton = document.querySelector(
+    ".brands-gallery-button-next"
+  );
+  nextBrandsButton.addEventListener("click", showNextBrandsCard);
+  const prevBrandsButton = document.querySelector(
+    ".brands-gallery-button-prev"
+  );
+  prevBrandsButton.addEventListener("click", showPrevBrandsCard);
 
-  window.addEventListener("resize", renderPartnersCard);
+  window.addEventListener("resize", renderBrandsCard);
 })();
