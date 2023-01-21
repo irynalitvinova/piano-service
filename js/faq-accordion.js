@@ -1,5 +1,4 @@
 (function () {
-
   let faqAccordion = document.getElementsByClassName("faq-accordion");
   let i;
 
@@ -14,5 +13,4 @@
       }
     });
   }
-
 })();
